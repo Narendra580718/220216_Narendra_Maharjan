@@ -1,0 +1,72 @@
+p{
+    font-size: 10px;
+    color: blue;
+}
+#second{
+    font-size: 20px;
+    color: red;
+}
+
+.third{
+    font-size: 30px;
+    color: brown;
+}
+
+a:link {
+    color: #FF0000;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color: #FF00FF;
+}
+
+::first-letter{
+    text-transform: uppercase;
+}
+::selection{
+    color: red;
+    background-color: green;
+}
+
+input[type="text"]{
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+input[type="Number"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: red;
+    }
+
+input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+    }
+
+.main-div h1{
+    background-color: orange;
+    color: blue;
+}
+.main-div h2{
+    background-color: green;
+    color: blue;
+}
+.main-div > h1{
+    background-color: purple;
+    color: black;
+}
+
+h1+h2{
+    background-color: aqua;
+    color: green;
+}
+
+#Paragarph{
+    color: red !important;
+}
