@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block_Inline</title>
+</head>
+<style>
+    .block{
+        display: block;
+        margin: 10px;
+        border: 1px solid black;
+        padding: 20px;
+        background-color: green; color: red;
+        box-sizing: content-box;
+    }
+    .inline{
+        display: inline;
+        margin: 10px;
+        background-color: bisque; color: blue;
+        border: 2px solid aqua;
+        padding: 20 px;
+        box-sizing: content-box;
+    }
+    .Inline_block{
+        display: inline-block;
+        background-color: black; color: white;
+        margin: 10px;
+        border: 2px solid black;
+        padding: 30px;
+        box-sizing: content-box;
+    }
+</style>
+<body>
+    <div class="block">This is first block</div>
+    <div class="block">This is second block</div>
+    <div class="block">This is third block</div>
+    <p class="inline">This is for inline</p>
+    <p class="inline">This is for second inline</p>
+    <p class="inline">This is for third inline</p>
+    <h1 class="Inline_block">This is for Inline block</h1>
+    <h1 class="Inline_block">This is for Second Inline block</h1>
+    <h1 class="Inline_block">This is for Third Inline block</h1>
+</body>
+</html>
