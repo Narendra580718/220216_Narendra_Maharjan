@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        padding-bottom: 300px;
+        padding-right: 500px;
+        height: 100px;
+        width: 100px;
+    }
+    .p1{
+        position: static;
+        background-color: blue;
+        width: 100px;
+        padding: 10px;
+    }
+    .p2{
+        position: relative;
+        top: 100%;
+        left: 250%;
+        background-color: blue;
+        width: 100px;
+        padding: 10px;
+    }
+    .p3{
+        position:absolute;
+        top: 10%;
+        left: 20%;
+        background-color: blue;
+        width: 100px;
+        padding: 10px;
+    }
+    .p4{
+        position: fixed;
+        background-color: blue;
+        width: 100px;
+        padding: 10px;
+        top: 49%;
+        left: 51%;
+    }
+</style>
+<body> 
+    <div class="container">
+        <div class="p1">Static Position</div>
+        <div class="p2">Relative Position</div>
+        <div class="p3">Absolute Position</div>
+        <div class="p4">Fixed Position</div>
+    </div>
+    <p style="font-size: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor rem harum sit praesentium, autem mollitia, ratione soluta id corrupti vel magni et ipsum. Sapiente reprehenderit, in quos recusandae nesciunt labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias saepe, excepturi nisi explicabo laudantium pariatur sed possimus ducimus quibusdam. Corporis, laudantium amet voluptatem dolor dolores ea consectetur repellendus provident? Consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem animi accusamus iure vitae temporibus facere quae ipsam tenetur esse? Alias neque voluptatem odit. Id esse cupiditate sed sapiente hic. Aliquam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ea rerum id nesciunt aspernatur similique ipsam voluptates placeat voluptas inventore? Ratione id impedit dolorum expedita dolor ex ab asperiores incidunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum suscipit minus fugiat, consequatur temporibus modi aliquid maxime, nesciunt quae provident beatae, quo illum? Doloribus placeat deleniti architecto quae omnis maxime.</p>
+</body>
+</html>
