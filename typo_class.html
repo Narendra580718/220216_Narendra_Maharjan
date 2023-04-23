@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+</head>
+<style>
+    .center-align
+    {
+        width: 100%;
+        background: red;
+        display: flex;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+    .center-align1
+    {
+        display: grid;
+        place-items: center;
+        background: green;
+        height: 300px;
+    }
+    .center-align2{
+        position: relative;
+        height: 300px;
+        background: salmon;
+    }
+    .center-align2 > p
+    {
+        position: absolute;
+        background: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
+<body>
+    <div class="center-align">CENTER ALIGN</div>
+    <div class="center-align1">This is center align1 where item is place center.</div>
+    <div class="center-align2">CENTER ALIGN2.
+        <p>This paragraph tag</p>
+    </div>
+</body>
+</html>
