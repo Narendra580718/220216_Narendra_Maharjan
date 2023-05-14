@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function division(){
+            let obtained_mark =60;
+            switch (true) {
+            case(obtained_mark >= 70):
+                console.log("Distinction");
+                break;
+            case (obtained_mark >= 60 && obtained_mark <70):
+                console.log("First class");
+                break;
+            case(obtained_mark >= 50 && obtained_mark <60):
+                console.log("Second class");
+                break;
+            case(obtained_mark >= 40 && obtained_mark <50):
+                console.log("Third class");
+                break;
+                
+            default:
+                console.log("Fail");
+        }
+    }
+    division()
+    </script>
+</body>
+</html>
