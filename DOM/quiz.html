@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="quiz"></div>
+    <button type="button" onclick="checkanswer()">SUBMIT</button>
+    <div id="result"></div>
+
+
+    <script>
+        const questions = [
+            {
+                question: "What is the capital of France?",
+                option: ["Berlin","Ottawa","Kathmandy","Paris"],
+                answer: "Paris"
+            },
+            {
+                question: "Tallest mountain located in?",
+                option: ["Germany","Canada","Nepal","France"],
+                answer: "Nepal"
+            },
+            {
+                question: "Riches person in the world?",
+                option: ["Putin","Trump","Oli Ba","Elon"],
+                answer: "Elon"
+            },
+        ];
+
+        let quizHTML = "";
+
+        for (let i=0; i<questions.length;i++){
+            quizHTML+= "<p>" + questions[i].question + "</p>";
+            
+            for(let j=0; j<questions[i].option.length; j++){
+                quizHTML += "<label>";
+                    quizHTML += "<input type='radio' name='question" + i +"' value='"+ questions[i].option[j]+"'>";
+                    quizHTML += questions[i].option[j]
+                    quizHTML += "</label>"
+            }
+
+        }
+        document.getElementById("quiz").innerHTML= quizHTML;
+         
+        function checkanswer(){
+            let numcorrect = 0;
+            console.log("hahahah")
+
+            for (let i = 0; i<questions.length;i++){
+                const selectoranswer = document.querySelector("input[name='question" + i + "']:checked").value;
+
+                if(selectoranswer==questions[i].answer){
+                    numcorrect++;
+                }
+            }
+            const resultHTML = "You got" + numcorrect + "out of" + questions.length + "questions correct.";
+            document.getElementById("result").innerHTML = resultHTML;
+        }
+       
+    </script>
+    
+</body>
+</html>
